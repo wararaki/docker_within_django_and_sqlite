@@ -11,6 +11,11 @@ db migration
 ```shell
 python manage.py makemigrations
 python manage.py migrate
+```
+
+data load
+
+```shell
 python manage.py loaddata sample_data.json
 ```
 
