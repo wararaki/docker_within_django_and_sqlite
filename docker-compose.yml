@@ -5,3 +5,6 @@ services:
     build: ./django_rest_tutorial
     ports:
       - 8000:8000
+    ## if you persist db data, please remove commentout.
+    # volumes:
+    #   - .:/server
