@@ -7,7 +7,7 @@ WORKDIR /server
 RUN pip install -r requirements.txt && rm -rf ~/.cache
 
 ## migration
-RUN python manage.py makemigrations && \
+RUN python manage.py makemigrations snippets && \
     python manage.py migrate && \
     python manage.py loaddata sample_data.json && \
     rm sample_data.json
